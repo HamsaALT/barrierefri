@@ -1,0 +1,132 @@
+# Build, test and package Barrierefri on Azure Pipelines.
+# Setup steps are in docs/azure-devops.md.
+
+trigger:
+  branches:
+    include: [main]
+
+pr:
+  branches:
+    include: [main]
+
+variables:
+  dotnetVersion: '10.0.x'
+  nodeVersion: '24.x'
+  buildConfiguration: Release
+
+stages:
+  - stage: Test
+    displayName: Build and test
+    jobs:
+      - job: Backend
+        displayName: .NET API
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: UseDotNet@2
+            displayName: Install .NET SDK
+            inputs:
+              packageType: sdk
+              version: $(dotnetVersion)
+
+          - script: dotnet restore
+            displayName: Restore
+            workingDirectory: backend
+
+          - script: dotnet build --no-restore -c $(buildConfiguration)
+            displayName: Build
+            workingDirectory: backend
+
+          # Integration tests start PostgreSQL and Azurite with Testcontainers.
+          # Microsoft-hosted Ubuntu agents have Docker, so nothing extra is needed.
+          - script: >
+              dotnet test --no-build -c $(buildConfiguration)
+              --settings coverlet.runsettings
+              --logger trx
+              --results-directory $(Agent.TempDirectory)/test-results
+            displayName: Unit and integration tests
+            workingDirectory: backend
+
+          - task: PublishTestResults@2
+            displayName: Publish test results
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFormat: VSTest
+              testResultsFiles: '$(Agent.TempDirectory)/test-results/*.trx'
+              testRunTitle: Backend
+
+          - task: PublishCodeCoverageResults@2
+            displayName: Publish coverage
+            condition: succeededOrFailed()
+            inputs:
+              summaryFileLocation: '$(Agent.TempDirectory)/test-results/**/coverage.cobertura.xml'
+
+      - job: Frontend
+        displayName: React app
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: NodeTool@0
+            displayName: Install Node.js
+            inputs:
+              versionSpec: $(nodeVersion)
+
+          - script: npm ci
+            displayName: Install packages
+            workingDirectory: frontend
+
+          - script: npm run lint
+            displayName: Lint (includes accessibility rules)
+            workingDirectory: frontend
+
+          - script: npm run format:check
+            displayName: Check formatting
+            workingDirectory: frontend
+
+          - script: npx vitest run --reporter=default --reporter=junit --outputFile=$(Agent.TempDirectory)/frontend-junit.xml
+            displayName: Tests (including axe accessibility checks)
+            workingDirectory: frontend
+
+          - task: PublishTestResults@2
+            displayName: Publish test results
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFormat: JUnit
+              testResultsFiles: '$(Agent.TempDirectory)/frontend-junit.xml'
+              testRunTitle: Frontend
+
+          - script: npm run build
+            displayName: Production build
+            workingDirectory: frontend
+
+  - stage: Package
+    displayName: Docker images
+    dependsOn: Test
+    jobs:
+      - job: Images
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          # Builds only. To publish, add a Docker registry service connection
+          # (for example Azure Container Registry) and switch the command to buildAndPush.
+          - task: Docker@2
+            displayName: Build API image
+            inputs:
+              command: build
+              repository: barrierefri-api
+              Dockerfile: backend/Dockerfile
+              buildContext: backend
+              tags: |
+                $(Build.BuildId)
+                latest
+
+          - task: Docker@2
+            displayName: Build web image
+            inputs:
+              command: build
+              repository: barrierefri-web
+              Dockerfile: frontend/Dockerfile
+              buildContext: frontend
+              tags: |
+                $(Build.BuildId)
+                latest
