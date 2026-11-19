@@ -1,0 +1,283 @@
+{
+  "app": {
+    "skipToContent": "Skip to main content",
+    "nav": {
+      "label": "Main",
+      "map": "Map",
+      "report": "Report a barrier",
+      "mine": "My reports",
+      "cases": "Case queue"
+    },
+    "signedInAs": "Signed in as {{name}}",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "createAccount": "Create account",
+    "footer": "Reports are written by members of the public. The responsible authority or company decides what happens next.",
+    "mapData": "Map data ©",
+    "osmContributors": "OpenStreetMap contributors",
+    "loading": "Loading…",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Language",
+    "da": "Dansk",
+    "en": "English"
+  },
+  "titleSuffix": "Barrierefri",
+  "categories": {
+    "BrokenElevator": {
+      "label": "Broken lift",
+      "hint": "Lift or platform lift out of order"
+    },
+    "BlockedSidewalk": {
+      "label": "Blocked pavement",
+      "hint": "Bikes, signs, roadworks or tables in the way"
+    },
+    "SteepCurb": {
+      "label": "High kerb",
+      "hint": "No dropped kerb at a crossing"
+    },
+    "MissingRamp": {
+      "label": "No ramp",
+      "hint": "Steps with no step-free alternative"
+    },
+    "MissingAudioSignal": {
+      "label": "No audio signal",
+      "hint": "Crossing without sound or vibration"
+    },
+    "InaccessibleEntrance": {
+      "label": "Inaccessible entrance",
+      "hint": "Shop, office or public building"
+    },
+    "Other": {
+      "label": "Something else",
+      "hint": "Anything that blocks access"
+    }
+  },
+  "status": {
+    "Open": "Open",
+    "InProgress": "Being fixed",
+    "Resolved": "Fixed",
+    "Rejected": "Closed"
+  },
+  "confidence": {
+    "likelyFixed": "Several people say this is fixed",
+    "confirmed": "Confirmed by several people",
+    "unconfirmed": "Reported, not yet confirmed by others",
+    "unclear": "Unclear: some say it is fixed"
+  },
+  "map": {
+    "title": "Barriers near you",
+    "lead": "Broken lifts, blocked pavements and missing ramps reported by people who use them. Check your route before you go, or report something new.",
+    "statsLabel": "Across Denmark",
+    "filters": "Filter reports",
+    "type": "Type of barrier",
+    "allTypes": "All types",
+    "includeClosed": "Show fixed and closed",
+    "mapLabel": "Map of reported barriers. The same reports are in the list.",
+    "listTitle": "Reports in this area",
+    "loadError": "Couldn't load reports. Try moving the map again.",
+    "count_one": "{{count}} report shown. Move the map to see other areas.",
+    "count_other": "{{count}} reports shown. Move the map to see other areas.",
+    "reported": "Reported {{when}}",
+    "showOnMap": "Show on map",
+    "markerTitle": "{{title}} ({{category}}, {{status}})",
+    "statsLoading": "Loading figures…",
+    "statOpen": "Open reports",
+    "statOverdue": "Past the deadline",
+    "statTypical": "Typical time to fix",
+    "statDays_one": "day",
+    "statDays_other": "days",
+    "legend": "Legend",
+    "emptyTitle": "No reports here",
+    "emptyText": "Move or zoom the map to see other areas, or also show fixed and closed reports."
+  },
+  "picker": {
+    "help": "Move the map so the crosshair is on the barrier. With a keyboard, select the map and use the arrow keys to move and + or − to zoom.",
+    "mapLabel": "Map for choosing the location",
+    "locate": "Use my current location",
+    "locating": "Finding you…",
+    "noGeolocation": "Your browser cannot share your location. Move the map instead.",
+    "locateFailed": "We couldn't get your location. Move the map to the right spot instead."
+  },
+  "report": {
+    "loading": "Loading report…",
+    "notFound": "Report not found",
+    "backToMap": "← Back to the map",
+    "reported": "Reported {{when}}",
+    "photoAlt": "The barrier: {{title}}",
+    "responsible": "Responsible",
+    "notAssigned": "Not assigned yet",
+    "history": "History",
+    "historyReported": "Reported",
+    "historyChanged": "Changed from {{from}} to {{to}}",
+    "mapLabel": "Map of where the barrier is. The place is also written in the text below the map.",
+    "due": "Due {{date}}",
+    "dueToday": "Due today",
+    "dueIn_one": "In {{count}} day",
+    "dueIn_other": "In {{count}} days",
+    "daysOverdue_one": "{{count}} day overdue",
+    "daysOverdue_other": "{{count}} days overdue",
+    "overdueBadge": "Overdue",
+    "fixedOn": "Fixed {{date}}",
+    "category": "Type",
+    "place": "Place",
+    "reportedOn": "Reported"
+  },
+  "vote": {
+    "title": "Have you been past it?",
+    "hint": "Confirmations tell the people fixing it what is still a problem.",
+    "stillThere": "It's still there",
+    "fixed": "It's fixed now",
+    "mine": "You reported this, so it already counts as confirmed.",
+    "signIn": "Sign in to confirm",
+    "saved": "Thanks, your answer is saved.",
+    "removed": "Your answer was removed.",
+    "stillThereCount_one": "{{count}} person says it is still there",
+    "stillThereCount_other": "{{count}} people say it is still there",
+    "fixedCount_one": "{{count}} person says it has been fixed",
+    "fixedCount_other": "{{count}} people say it has been fixed"
+  },
+  "staff": {
+    "title": "Case handling",
+    "newStatus": "New status",
+    "noteRequired": "Note to the public (required)",
+    "noteOptional": "Note to the public (optional)",
+    "update": "Update status",
+    "updated": "Status updated.",
+    "responsible": "Responsible authority or company",
+    "save": "Save",
+    "saved": "Saved."
+  },
+  "newReport": {
+    "title": "Report a barrier",
+    "signInText": "You need an account to send a report, so the people fixing it can tell reports apart and you can follow what happens. Looking at the map doesn't need an account.",
+    "signIn": "Sign in to report",
+    "required": "Fields marked (required) must be filled in.",
+    "problem": "There is a problem",
+    "categoryLegend": "What is the problem? (required)",
+    "locationLegend": "Where is it? (required)",
+    "nearbyTitle": "Already reported here?",
+    "nearbyText_one": "There is a report of this kind within 30 metres. If it's the same barrier, open it and confirm it instead. That helps more than a new report.",
+    "nearbyText_other": "There are {{count}} reports of this kind within 30 metres. If it's the same barrier, open it and confirm it instead. That helps more than a new report.",
+    "metresAway": "{{distance}} m away",
+    "titleLabel": "Short title (required)",
+    "titleHint": "For example: \"Lift to platform 2 out of order\"",
+    "placeLabel": "Place name or address (optional)",
+    "placeHint": "Helps people find it, for example \"Nørreport Station, Frederiksborggade exit\"",
+    "detailsLabel": "More details (optional)",
+    "photoLabel": "Photo (optional)",
+    "photoHint": "JPEG, PNG or WebP, up to 5 MB. Avoid faces and number plates.",
+    "duplicateTitle": "This may already be reported",
+    "duplicateText": "If yours is a different barrier, you can still send it.",
+    "sendAnyway": "Send my report anyway",
+    "sending": "Sending…",
+    "send": "Send report",
+    "signInTitle": "Sign in to report a barrier",
+    "stepOf": "Step {{step}} of {{total}}",
+    "describeLegend": "Describe the barrier"
+  },
+  "mine": {
+    "title": "My reports",
+    "empty": "You haven't reported anything yet.",
+    "reportLink": "Report a barrier"
+  },
+  "cases": {
+    "title": "Case queue",
+    "staffOnly": "The case queue is for staff at municipalities and transport operators.",
+    "lead": "Ordered by deadline. The most overdue cases are at the top.",
+    "filters": "Filter cases",
+    "status": "Status",
+    "activeStatuses": "Open and being fixed",
+    "overdueOnly": "Only overdue",
+    "count_one": "{{count}} case",
+    "count_other": "{{count}} cases",
+    "caption": "Cases, ordered by deadline",
+    "colReport": "Report",
+    "colStatus": "Status",
+    "colResponsible": "Responsible",
+    "colDeadline": "Deadline",
+    "colConfirmations": "Confirmations",
+    "notAssigned": "Not assigned",
+    "votes": "{{stillThere}} still there, {{fixed}} fixed",
+    "likelyFixed": "Probably fixed: check",
+    "colActions": "Actions",
+    "overdueCount_one": "{{count}} overdue",
+    "overdueCount_other": "{{count}} overdue",
+    "daysOver_one": "{{count}} day overdue",
+    "daysOver_other": "{{count}} days overdue",
+    "dueToday": "Due today",
+    "dueIn_one": "in {{count}} day",
+    "dueIn_other": "in {{count}} days",
+    "actions": {
+      "Open": "Reopen",
+      "InProgress": "Start fixing",
+      "Resolved": "Mark fixed"
+    },
+    "changed": "“{{title}}” is now {{status}}.",
+    "empty": "No cases match the filter"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "link": "Go to the map"
+  },
+  "validation": {
+    "category": "Choose the type of barrier.",
+    "title": "Give the report a short title.",
+    "titleTooLong": "The title can be at most 100 characters.",
+    "descriptionTooLong": "The details can be at most 1,000 characters.",
+    "placeTooLong": "The place name can be at most 200 characters.",
+    "location": "The location must be in Denmark.",
+    "photoType": "The photo must be a JPEG, PNG or WebP image.",
+    "photoSize": "The photo must be 5 MB or smaller.",
+    "errorPrefix": "Error:"
+  },
+  "errors": {
+    "STATUS_UNCHANGED": "The report already has that status.",
+    "STATUS_TRANSITION_INVALID": "A report that is \"{{from}}\" can't be set to \"{{to}}\".",
+    "REPORT_CLOSED": "Only open reports can be confirmed.",
+    "OWN_REPORT": "You reported this, so it already counts as confirmed.",
+    "PHOTO_NOT_YOURS": "Only the person who reported this can add a photo.",
+    "PHOTO_MISSING": "Choose a photo to upload.",
+    "PHOTO_TOO_LARGE": "The photo must be 5 MB or smaller.",
+    "PHOTO_TYPE": "Only JPEG, PNG and WebP photos are supported.",
+    "AREA_INVALID": "The map area isn't valid. Try moving the map.",
+    "NOT_FOUND": "We couldn't find that. It may have been removed.",
+    "network": "Can't reach the server. Check your connection and try again.",
+    "unauthorized": "Please sign in first.",
+    "forbidden": "You don't have access to do that.",
+    "validation": "Some of the values are not valid.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "sources": {
+    "heading": "Where does this information come from?",
+    "users": "The users",
+    "ours": "Barrierefri's own targets",
+    "calculated": "Calculated by Barrierefri",
+    "osm": "OpenStreetMap",
+    "seeSource": "See the source",
+    "newTab": "(opens in a new tab)",
+    "footnote": "Barrierefri is a private project, not a public authority. The municipality or transport operator decides when a barrier is fixed.",
+    "reports": {
+      "title": "The report and photo",
+      "text": "Written by the person who reported the barrier. Barrierefri doesn't check reports before they're shown, but staff can reject them with a reason."
+    },
+    "deadline": {
+      "title": "Deadline for fixing it",
+      "text": "The deadlines don't come from a law or a public authority. Barrierefri set them based on how much the barrier blocks: 2 days for a lift, 3 for a blocked pavement, 7 for an audio signal, 30 for anything else, 60 for an entrance and 90 for kerbs and ramps."
+    },
+    "confirmations": {
+      "title": "Confirmations",
+      "text": "People who have been past answer whether the barrier is still there. Barrierefri turns the answers into an estimate. A new report starts at two thirds, so no single answer can settle it."
+    },
+    "map": {
+      "title": "The map",
+      "text": "Map data from OpenStreetMap and its contributors."
+    }
+  },
+  "signIn": {
+    "mineTitle": "Sign in to see your reports",
+    "mineText": "Here you can follow the barriers you have reported and see when they get fixed.",
+    "casesTitle": "Sign in to see the case queue"
+  }
+}

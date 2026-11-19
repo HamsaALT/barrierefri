@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Report and track accessibility barriers in Danish cities." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barrierefri</title>
+  </head>
+  <body>
+    <!-- Shown until the app's first render replaces it, so the page is never blank. -->
+    <div id="root">
+      <div class="boot-shell" aria-busy="true">
+        <div class="boot-header"><span class="boot-brand">Barrierefri</span></div>
+        <div class="boot-body"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+    <style>
+      .boot-shell { font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; }
+      .boot-header { padding: 16px 20px; border-bottom: 1px solid #d9ddd8; background: #fff; }
+      .boot-brand { font-size: 1.35rem; font-weight: 700; color: #0f5c6e; }
+      .boot-body { display: grid; gap: 12px; max-width: 1200px; margin: 24px auto; padding: 0 20px; }
+      .boot-body span { display: block; height: 18px; border-radius: 8px; background: #eef0ec; }
+      .boot-body span:first-child { height: 32px; width: 50%; }
+    </style>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

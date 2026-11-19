@@ -1,0 +1,283 @@
+{
+  "app": {
+    "skipToContent": "Gå til hovedindhold",
+    "nav": {
+      "label": "Hovedmenu",
+      "map": "Kort",
+      "report": "Meld en barriere",
+      "mine": "Mine meldinger",
+      "cases": "Sagskø"
+    },
+    "signedInAs": "Logget ind som {{name}}",
+    "signIn": "Log ind",
+    "signOut": "Log ud",
+    "createAccount": "Opret konto",
+    "footer": "Meldingerne er skrevet af borgere. Den ansvarlige myndighed eller virksomhed beslutter, hvad der skal ske.",
+    "mapData": "Kortdata ©",
+    "osmContributors": "OpenStreetMap-bidragydere",
+    "loading": "Henter…",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Sprog",
+    "da": "Dansk",
+    "en": "English"
+  },
+  "titleSuffix": "Barrierefri",
+  "categories": {
+    "BrokenElevator": {
+      "label": "Elevator i stykker",
+      "hint": "Elevator eller trappelift virker ikke"
+    },
+    "BlockedSidewalk": {
+      "label": "Spærret fortov",
+      "hint": "Cykler, skilte, vejarbejde eller borde i vejen"
+    },
+    "SteepCurb": {
+      "label": "Høj kantsten",
+      "hint": "Ingen nedsænket kantsten ved et overgangssted"
+    },
+    "MissingRamp": {
+      "label": "Ingen rampe",
+      "hint": "Trapper uden et trinfrit alternativ"
+    },
+    "MissingAudioSignal": {
+      "label": "Intet lydsignal",
+      "hint": "Fodgængerovergang uden lyd eller vibration"
+    },
+    "InaccessibleEntrance": {
+      "label": "Utilgængelig indgang",
+      "hint": "Butik, kontor eller offentlig bygning"
+    },
+    "Other": {
+      "label": "Noget andet",
+      "hint": "Alt, der spærrer for adgangen"
+    }
+  },
+  "status": {
+    "Open": "Åben",
+    "InProgress": "Under udbedring",
+    "Resolved": "Udbedret",
+    "Rejected": "Lukket"
+  },
+  "confidence": {
+    "likelyFixed": "Flere siger, at det er udbedret",
+    "confirmed": "Bekræftet af flere",
+    "unconfirmed": "Meldt, men endnu ikke bekræftet af andre",
+    "unclear": "Uklart: nogle siger, at det er udbedret"
+  },
+  "map": {
+    "title": "Barrierer i nærheden",
+    "lead": "Elevatorer i stykker, spærrede fortove og manglende ramper, meldt af dem, der selv bruger dem. Tjek din rute, før du tager af sted, eller meld noget nyt.",
+    "statsLabel": "I hele Danmark",
+    "filters": "Filtrér meldinger",
+    "type": "Type barriere",
+    "allTypes": "Alle typer",
+    "includeClosed": "Vis udbedrede og lukkede",
+    "mapLabel": "Kort over meldte barrierer. De samme meldinger står i listen.",
+    "listTitle": "Meldinger i dette område",
+    "loadError": "Meldingerne kunne ikke hentes. Prøv at flytte kortet igen.",
+    "count_one": "{{count}} melding vises. Flyt kortet for at se andre områder.",
+    "count_other": "{{count}} meldinger vises. Flyt kortet for at se andre områder.",
+    "reported": "Meldt {{when}}",
+    "showOnMap": "Vis på kortet",
+    "markerTitle": "{{title}} ({{category}}, {{status}})",
+    "statsLoading": "Henter tal…",
+    "statOpen": "Åbne meldinger",
+    "statOverdue": "Over fristen",
+    "statTypical": "Typisk tid til udbedring",
+    "statDays_one": "dag",
+    "statDays_other": "dage",
+    "legend": "Forklaring",
+    "emptyTitle": "Ingen meldinger her",
+    "emptyText": "Flyt eller zoom kortet for at se andre områder, eller vis også udbedrede og lukkede meldinger."
+  },
+  "picker": {
+    "help": "Flyt kortet, så trådkorset står på barrieren. Med tastaturet: vælg kortet, og brug piletasterne til at flytte og + eller − til at zoome.",
+    "mapLabel": "Kort til at vælge stedet",
+    "locate": "Brug min nuværende placering",
+    "locating": "Finder dig…",
+    "noGeolocation": "Din browser kan ikke dele din placering. Flyt kortet i stedet.",
+    "locateFailed": "Vi kunne ikke finde din placering. Flyt kortet til det rigtige sted i stedet."
+  },
+  "report": {
+    "loading": "Henter meldingen…",
+    "notFound": "Meldingen blev ikke fundet",
+    "backToMap": "← Tilbage til kortet",
+    "reported": "Meldt {{when}}",
+    "photoAlt": "Barrieren: {{title}}",
+    "responsible": "Ansvarlig",
+    "notAssigned": "Ikke tildelt endnu",
+    "history": "Historik",
+    "historyReported": "Meldt",
+    "historyChanged": "Ændret fra {{from}} til {{to}}",
+    "mapLabel": "Kort over, hvor barrieren er. Stedet står også i teksten under kortet.",
+    "due": "Frist {{date}}",
+    "dueToday": "Skal udbedres i dag",
+    "dueIn_one": "Om {{count}} dag",
+    "dueIn_other": "Om {{count}} dage",
+    "daysOverdue_one": "{{count}} dag over fristen",
+    "daysOverdue_other": "{{count}} dage over fristen",
+    "overdueBadge": "Over fristen",
+    "fixedOn": "Udbedret {{date}}",
+    "category": "Type",
+    "place": "Sted",
+    "reportedOn": "Meldt"
+  },
+  "vote": {
+    "title": "Er du kommet forbi den?",
+    "hint": "Bekræftelser viser dem, der skal udbedre den, hvad der stadig er et problem.",
+    "stillThere": "Den er der stadig",
+    "fixed": "Den er udbedret nu",
+    "mine": "Det er dig, der har meldt den, så den tæller allerede som bekræftet.",
+    "signIn": "Log ind for at bekræfte",
+    "saved": "Tak, dit svar er gemt.",
+    "removed": "Dit svar er fjernet.",
+    "stillThereCount_one": "{{count}} person siger, at den er der stadig",
+    "stillThereCount_other": "{{count}} personer siger, at den er der stadig",
+    "fixedCount_one": "{{count}} person siger, at den er udbedret",
+    "fixedCount_other": "{{count}} personer siger, at den er udbedret"
+  },
+  "staff": {
+    "title": "Sagsbehandling",
+    "newStatus": "Ny status",
+    "noteRequired": "Besked til offentligheden (skal udfyldes)",
+    "noteOptional": "Besked til offentligheden (valgfri)",
+    "update": "Opdatér status",
+    "updated": "Status er opdateret.",
+    "responsible": "Ansvarlig myndighed eller virksomhed",
+    "save": "Gem",
+    "saved": "Gemt."
+  },
+  "newReport": {
+    "title": "Meld en barriere",
+    "signInText": "Du skal have en konto for at sende en melding, så dem, der skal udbedre den, kan holde meldingerne adskilt, og du kan følge med i, hvad der sker. Du kan sagtens se kortet uden en konto.",
+    "signIn": "Log ind for at melde",
+    "required": "Felter markeret med (skal udfyldes) er obligatoriske.",
+    "problem": "Der er et problem",
+    "categoryLegend": "Hvad er problemet? (skal udfyldes)",
+    "locationLegend": "Hvor er det? (skal udfyldes)",
+    "nearbyTitle": "Er det allerede meldt her?",
+    "nearbyText_one": "Der er en melding af denne type inden for 30 meter. Hvis det er den samme barriere, så åbn den og bekræft den i stedet. Det hjælper mere end en ny melding.",
+    "nearbyText_other": "Der er {{count}} meldinger af denne type inden for 30 meter. Hvis det er den samme barriere, så åbn den og bekræft den i stedet. Det hjælper mere end en ny melding.",
+    "metresAway": "{{distance}} m væk",
+    "titleLabel": "Kort titel (skal udfyldes)",
+    "titleHint": "For eksempel: \"Elevator til spor 2 virker ikke\"",
+    "placeLabel": "Stednavn eller adresse (valgfri)",
+    "placeHint": "Gør det nemmere at finde, for eksempel \"Nørreport Station, udgangen mod Frederiksborggade\"",
+    "detailsLabel": "Flere detaljer (valgfri)",
+    "photoLabel": "Foto (valgfri)",
+    "photoHint": "JPEG, PNG eller WebP, højst 5 MB. Undgå ansigter og nummerplader.",
+    "duplicateTitle": "Det er måske allerede meldt",
+    "duplicateText": "Hvis din melding gælder en anden barriere, kan du stadig sende den.",
+    "sendAnyway": "Send min melding alligevel",
+    "sending": "Sender…",
+    "send": "Send melding",
+    "signInTitle": "Log ind for at melde en barriere",
+    "stepOf": "Trin {{step}} af {{total}}",
+    "describeLegend": "Beskriv barrieren"
+  },
+  "mine": {
+    "title": "Mine meldinger",
+    "empty": "Du har ikke meldt noget endnu.",
+    "reportLink": "Meld en barriere"
+  },
+  "cases": {
+    "title": "Sagskø",
+    "staffOnly": "Sagskøen er for medarbejdere i kommuner og hos transportselskaber.",
+    "lead": "Sorteret efter frist. De sager, der er længst over fristen, står øverst.",
+    "filters": "Filtrér sager",
+    "status": "Status",
+    "activeStatuses": "Åbne og under udbedring",
+    "overdueOnly": "Kun over fristen",
+    "count_one": "{{count}} sag",
+    "count_other": "{{count}} sager",
+    "caption": "Sager sorteret efter frist",
+    "colReport": "Melding",
+    "colStatus": "Status",
+    "colResponsible": "Ansvarlig",
+    "colDeadline": "Frist",
+    "colConfirmations": "Bekræftelser",
+    "notAssigned": "Ikke tildelt",
+    "votes": "{{stillThere}} stadig der, {{fixed}} udbedret",
+    "likelyFixed": "Sandsynligvis udbedret: tjek",
+    "colActions": "Handlinger",
+    "overdueCount_one": "{{count}} over fristen",
+    "overdueCount_other": "{{count}} over fristen",
+    "daysOver_one": "{{count}} dag over fristen",
+    "daysOver_other": "{{count}} dage over fristen",
+    "dueToday": "Skal udbedres i dag",
+    "dueIn_one": "om {{count}} dag",
+    "dueIn_other": "om {{count}} dage",
+    "actions": {
+      "Open": "Genåbn",
+      "InProgress": "Start udbedring",
+      "Resolved": "Markér udbedret"
+    },
+    "changed": "»{{title}}« er nu {{status}}.",
+    "empty": "Ingen sager matcher filteret"
+  },
+  "notFound": {
+    "title": "Siden findes ikke",
+    "link": "Gå til kortet"
+  },
+  "validation": {
+    "category": "Vælg, hvilken type barriere det er.",
+    "title": "Giv meldingen en kort titel.",
+    "titleTooLong": "Titlen må højst være på 100 tegn.",
+    "descriptionTooLong": "Detaljerne må højst være på 1.000 tegn.",
+    "placeTooLong": "Stednavnet må højst være på 200 tegn.",
+    "location": "Stedet skal ligge i Danmark.",
+    "photoType": "Fotoet skal være et JPEG-, PNG- eller WebP-billede.",
+    "photoSize": "Fotoet må højst fylde 5 MB.",
+    "errorPrefix": "Fejl:"
+  },
+  "errors": {
+    "STATUS_UNCHANGED": "Meldingen har allerede den status.",
+    "STATUS_TRANSITION_INVALID": "En melding, der er \"{{from}}\", kan ikke ændres til \"{{to}}\".",
+    "REPORT_CLOSED": "Kun åbne meldinger kan bekræftes.",
+    "OWN_REPORT": "Det er dig, der har meldt den, så den tæller allerede som bekræftet.",
+    "PHOTO_NOT_YOURS": "Kun den, der har meldt barrieren, kan tilføje et foto.",
+    "PHOTO_MISSING": "Vælg et foto at uploade.",
+    "PHOTO_TOO_LARGE": "Fotoet må højst fylde 5 MB.",
+    "PHOTO_TYPE": "Kun JPEG-, PNG- og WebP-billeder understøttes.",
+    "AREA_INVALID": "Kortudsnittet er ikke gyldigt. Prøv at flytte kortet.",
+    "NOT_FOUND": "Vi kunne ikke finde det. Det er måske blevet fjernet.",
+    "network": "Vi kan ikke få forbindelse til serveren. Tjek din forbindelse, og prøv igen.",
+    "unauthorized": "Log ind først.",
+    "forbidden": "Du har ikke adgang til at gøre det.",
+    "validation": "Nogle af værdierne er ikke gyldige.",
+    "generic": "Noget gik galt. Prøv igen."
+  },
+  "sources": {
+    "heading": "Hvor kommer oplysningerne fra?",
+    "users": "Brugerne",
+    "ours": "Barrierefris egne mål",
+    "calculated": "Beregnet af Barrierefri",
+    "osm": "OpenStreetMap",
+    "seeSource": "Se kilden",
+    "newTab": "(åbner i en ny fane)",
+    "footnote": "Barrierefri er et privat projekt og ikke en myndighed. Det er kommunen eller transportselskabet, der beslutter, hvornår en barriere bliver udbedret.",
+    "reports": {
+      "title": "Meldingen og billedet",
+      "text": "Skrevet af den, der meldte barrieren. Barrierefri kontrollerer ikke meldinger, før de bliver vist, men personalet kan afvise dem med en begrundelse."
+    },
+    "deadline": {
+      "title": "Frist for udbedring",
+      "text": "Fristerne kommer ikke fra en lov eller en myndighed. Barrierefri har selv sat dem efter, hvor meget barrieren spærrer: 2 dage for en elevator, 3 for et spærret fortov, 7 for et lydsignal, 30 for andet, 60 for en indgang og 90 for kantsten og ramper."
+    },
+    "confirmations": {
+      "title": "Bekræftelser",
+      "text": "Folk, der er kommet forbi, svarer, om barrieren stadig er der. Barrierefri regner svarene om til et skøn. En ny melding starter på to tredjedele, så ét enkelt svar aldrig kan afgøre sagen."
+    },
+    "map": {
+      "title": "Kortet",
+      "text": "Kortdata fra OpenStreetMap og dets bidragydere."
+    }
+  },
+  "signIn": {
+    "mineTitle": "Log ind for at se dine meldinger",
+    "mineText": "Her kan du følge de barrierer, du selv har meldt, og se hvornår de bliver udbedret.",
+    "casesTitle": "Log ind for at se sagskøen"
+  }
+}
