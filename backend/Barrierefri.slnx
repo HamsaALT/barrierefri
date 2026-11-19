@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Barrierefri.Api/Barrierefri.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Barrierefri.IntegrationTests/Barrierefri.IntegrationTests.csproj" />
+    <Project Path="tests/Barrierefri.UnitTests/Barrierefri.UnitTests.csproj" />
+  </Folder>
+</Solution>
