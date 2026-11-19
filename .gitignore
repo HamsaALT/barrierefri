@@ -1,0 +1,17 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+backend/TestResults/
+*.user
+.vs/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Local env and OS files
+.env
+.idea/
+.DS_Store
+Thumbs.db
